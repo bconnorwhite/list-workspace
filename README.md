@@ -106,13 +106,11 @@ const workspacePackageJSONs= await listWorkspacePackageJSON("packages/*");
 - [package-run](https://www.npmjs.com/package/package-run): Node API for running package.json scripts. Supports yarn, npm, and pnpm.
 - [workspace-root](https://www.npmjs.com/package/workspace-root): A simple utility to get the workspace root
 
-
 <br />
 
 <h3>Dev Dependencies</h3>
 
 - [autorepo](https://www.npmjs.com/package/autorepo): Autorepo abstracts away your dev dependencies, providing a single command to run all of your scripts.
-
 
 <br />
 
