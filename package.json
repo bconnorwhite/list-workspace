@@ -1,0 +1,67 @@
+{
+  "name": "list-workspace",
+  "version": "0.0.0",
+  "description": "List all packages in a workspace, or all workspaces in a monorepo.",
+  "license": "MIT",
+  "private": false,
+  "author": {
+    "name": "Connor White",
+    "email": "hello@connorwhite.dev",
+    "url": "https://connorwhite.dev"
+  },
+  "contributors": [],
+  "homepage": "https://github.com/bconnorwhite/list-workspace#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bconnorwhite/list-workspace.git"
+  },
+  "bugs": "https://github.com/bconnorwhite/list-workspace/issues",
+  "keywords": [
+    "workspace",
+    "list",
+    "packages",
+    "monorepo",
+    "workspaces",
+    "find",
+    "name",
+    "names"
+  ],
+  "type": "module",
+  "main": ".auto/build/index.js",
+  "exports": "./.auto/build/index.js",
+  "module": "src/index.ts",
+  "types": ".auto/build/index.d.ts",
+  "files": [
+    ".auto/build/**/!(tsconfig.tsbuildinfo)"
+  ],
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
+  },
+  "scripts": {
+    "build": "auto build",
+    "dev": "auto dev",
+    "lint": "auto lint",
+    "prepack": "yarn build",
+    "release": "auto release",
+    "test": "auto test",
+    "typecheck": "auto typecheck"
+  },
+  "dependencies": {
+    "globby": "^13.2.2",
+    "is-monorepo": "^1.0.0",
+    "package-run": "^3.0.1",
+    "workspace-root": "^3.1.1"
+  },
+  "devDependencies": {
+    "autorepo": "^0.1.10"
+  },
+  "eslintConfig": {
+    "extends": "@autosoft/eslint-config"
+  },
+  "jest": {
+    "preset": "@autosoft/jest-preset"
+  },
+  "npmpackagejsonlint": {
+    "extends": "npm-package-json-lint-config-auto"
+  }
+}
